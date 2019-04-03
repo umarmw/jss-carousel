@@ -74,13 +74,15 @@
     "reactstrap": "^7.1.0",
     "url-loader": "~1.1.2",
     "webpack": "4.19.1",
-    "webpack-cli": "~3.2.1"
+    "webpack-cli": "~3.2.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
     "jss": "jss",
     "start": "npm-run-all --serial bootstrap:disconnected --parallel start:react start:proxy start:watch-components",
     "start:connected": "scjss-verify-setup && npm-run-all --serial bootstrap:connected start:react start:watch-components",
     "build": "npm-run-all --serial bootstrap:connected build:client build:server",
+    "webpack": "cross-env-shell NODE_ENV=production \"webpack --config webpack.config.js\"",
     "scaffold": "node scripts/scaffold-component.js",
     "start:react": "react-scripts start",
     "start:proxy": "node scripts/disconnected-mode-proxy.js",
@@ -98,5 +100,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
+  ],
+  "files": [
+    "dist",
+    "sitecore/definitions/components"
   ]
 }
