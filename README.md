@@ -130,6 +130,11 @@ Add dummy contents in `data/routes/en.yml`
           caption: 'A doom or a crazy situation lies ahead'
 ```
 
+# Example
+Run `npm i` and `jss-start`
+
+https://github.com/umarmw/experiment
+
 
 # End Note
 
