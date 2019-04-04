@@ -1,7 +1,7 @@
 {
   "name": "jss-carousel",
   "description": "Carousel for Sitecore using JSS React.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "config": {
     "appName": "jss-carousel",
